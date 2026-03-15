@@ -1,0 +1,14 @@
+{
+    "imports": {
+        "@oak/oak": "jsr:@oak/oak@^17.1.6",
+        "@db/mongo": "jsr:@db/mongo@^0.34.0"
+    },
+    "tasks": {
+        "dev": "deno run --allow-net --allow-env --env-file=.env app.ts"
+    },
+    "lint": {
+        "rules": {
+            "exclude": ["no-import-prefix"]
+        }
+    }
+}
